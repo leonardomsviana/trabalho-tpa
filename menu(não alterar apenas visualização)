@@ -32,7 +32,14 @@ int main() {
 	switch(m){
 		case 1:
 			
-			printf("Insira a pergunta 1:  ");
+			printf("Digite 1 para inserir perguntas ou 2 para voltar ao menu inicial:  ");
+			scanf("%d", &subm2);
+				
+			system ("cls");
+			switch(subm2){
+			case 1:
+				
+			printf("Insira a pergunta 1:");
 			printf("\n");
 			printf("\n");
 			printf("\n");
@@ -67,13 +74,34 @@ int main() {
 				system("pause");
 				system("cls");
 				main();
-		}
+				}
+				break;
+				
+			break;
+			case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+			}
 		break;
 		
 		case 2:
 			
-			printf("Insira a resposta 1:  ");
-			
+		printf("Digite 1 para inserir respostas ou 2 para voltar ao menu inicial:  ");
+			scanf("%d", &subm2);
+				
+			system ("cls");
+			switch(subm2){
+			case 1:
+				
+			printf("Insira a resposta 1:");
 			printf("\n");
 			printf("\n");
 			printf("\n");
@@ -87,13 +115,13 @@ int main() {
 			printf("                                    *********************************************************************\n");
 			
 			printf("\n\nInsira o digito desejado: ");
-			scanf("%d", &subm2);
+			scanf("%d", &subm1);
 				
 				system ("cls");
-				switch(subm2){
+				switch(subm1){
 				case 1:
 					
-					printf("Insira a resposta 1:  ");
+					printf("Insira a proxima resposta:  ");
 					
 					break;
 					
@@ -110,18 +138,148 @@ int main() {
 				main();
 		}
 		break;
+		
+		break;
+			case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+			}
+		break;
+		
 			
 		case 3:
 			
-			printf("Insira a resposta da pergunta 1 ou digite 1 para voltar:\n");
-			printf("Resultados (de 1 a 10): ");
+			printf("Digite 1 para inserir respostas ou 2 para voltar ao menu inicial:  ");
+			scanf("%d", &subm2);
+				
+			system ("cls");
+			switch(subm2){
+			case 1:
+				
+			printf("Insira a resposta 1:");
+			printf("\n");
+			printf("\n");
+			printf("\n");
+			printf("                                    *********************************************************************\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *     1. Inserir mais respostas                                     *\n");
+			printf("                                    *     2. Voltar                                                     *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *********************************************************************\n");
+			
+			printf("\n\nInsira o digito desejado: ");
+			scanf("%d", &subm1);
+				
+				system ("cls");
+				switch(subm1){
+				case 1:
+					
+					printf("Insira a proxima resposta:  ");
+					
+					break;
+					
+				case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+		}
+			printf("\n\nResultados (de 1 a 10): ");
 			break;
+			
+			break;
+			case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+			}
+		break;
 			
 		case 4:
 			
-			printf("Insira aqui o nome do arquivo.txt (ou caminho):\n");
+			printf("Digite 1 para inserir o arquivo ou 2 para voltar ao menu inicial:  ");
+			scanf("%d", &subm2);
+				
+			system ("cls");
+			switch(subm2){
+			case 1:
+				
+			printf("Salve o arquivo txt que deseja corrigir como arquivo.txt:\n");
 			printf("Resultados (de 1 a 10): ");
+			printf("\n");
+			printf("\n");
+			printf("\n");
+			printf("                                    *********************************************************************\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *     1. Inserir mais arquivos                                      *\n");
+			printf("                                    *     2. Voltar                                                     *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *                                                                   *\n");
+			printf("                                    *********************************************************************\n");
+			
+			printf("\n\nInsira o digito desejado: ");
+			scanf("%d", &subm1);
+				
+				system ("cls");
+				switch(subm1){
+				case 1:
+					
+					printf("Insira o proximo arquivo:  ");
+					
+					break;
+					
+				case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+			}
 			break;
+			
+			break;
+			case 2: 
+				
+				system("cls");
+				main();
+				break;
+				
+				default:
+				printf("Erro!\n");
+				system("pause");
+				system("cls");
+				main();
+			}
+		break;
 			
 		case 5:
 			return 0;
