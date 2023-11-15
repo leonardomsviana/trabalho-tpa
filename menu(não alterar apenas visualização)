@@ -9,6 +9,7 @@ int main() {
 	
 	system("color f0");
 	int m, subm1, subm2;
+	char perg, resp;
 	
 	printf("\n");
 	printf("\n");
@@ -16,11 +17,10 @@ int main() {
 	printf("                                    *********************************************************************\n");
 	printf("                                    *                                                                   *\n");
 	printf("                                    *                                                                   *\n");
-	printf("                                    *     1. Inserir perguntas                                          *\n");
-	printf("                                    *     2. Inserir respostas (palavras chaves)                        *\n");
-	printf("                                    *     3. Resolva localmente                                         *\n");
-	printf("                                    *     4. Insira arquivos de resposta (redação) em .txt              *\n");
-	printf("                                    *     5. Sair                                                       *\n");
+	printf("                                    *     1. Inserir perguntas e respostas (palavras chaves)            *\n");
+	printf("                                    *     2. Resolva localmente                                         *\n");
+	printf("                                    *     3. Insira arquivos de resposta (redação) em .txt              *\n");
+	printf("                                    *     4. Sair                                                       *\n");
 	printf("                                    *                                                                   *\n");
 	printf("                                    *                                                                   *\n");
 	printf("                                    *********************************************************************\n");
@@ -40,6 +40,10 @@ int main() {
 			case 1:
 				
 			printf("Insira a pergunta 1:");
+			scanf("%s", &perg);
+			system ("cls");
+			printf("Agora, digite a resposta desta pergunta:  ");
+			scanf("%s", &resp);
 			printf("\n");
 			printf("\n");
 			printf("\n");
@@ -59,7 +63,8 @@ int main() {
 				switch(subm1){
 				case 1:
 					
-					printf("Insira a pergunta 1:  ");
+					printf("Insira a próxima pergunta:  ");
+					printf("\nInsira a resposta desta pergunta: ");
 					
 					break;
 					
@@ -92,70 +97,8 @@ int main() {
 			}
 		break;
 		
+			
 		case 2:
-			
-		printf("Digite 1 para inserir respostas ou 2 para voltar ao menu inicial:  ");
-			scanf("%d", &subm2);
-				
-			system ("cls");
-			switch(subm2){
-			case 1:
-				
-			printf("Insira a resposta 1:");
-			printf("\n");
-			printf("\n");
-			printf("\n");
-			printf("                                    *********************************************************************\n");
-			printf("                                    *                                                                   *\n");
-			printf("                                    *                                                                   *\n");
-			printf("                                    *     1. Inserir mais respostas                                     *\n");
-			printf("                                    *     2. Voltar                                                     *\n");
-			printf("                                    *                                                                   *\n");
-			printf("                                    *                                                                   *\n");
-			printf("                                    *********************************************************************\n");
-			
-			printf("\n\nInsira o digito desejado: ");
-			scanf("%d", &subm1);
-				
-				system ("cls");
-				switch(subm1){
-				case 1:
-					
-					printf("Insira a proxima resposta:  ");
-					
-					break;
-					
-				case 2: 
-				
-				system("cls");
-				main();
-				break;
-				
-				default:
-				printf("Erro!\n");
-				system("pause");
-				system("cls");
-				main();
-		}
-		break;
-		
-		break;
-			case 2: 
-				
-				system("cls");
-				main();
-				break;
-				
-				default:
-				printf("Erro!\n");
-				system("pause");
-				system("cls");
-				main();
-			}
-		break;
-		
-			
-		case 3:
 			
 			printf("Digite 1 para inserir respostas ou 2 para voltar ao menu inicial:  ");
 			scanf("%d", &subm2);
@@ -218,7 +161,7 @@ int main() {
 			}
 		break;
 			
-		case 4:
+		case 3:
 			
 			printf("Digite 1 para inserir o arquivo ou 2 para voltar ao menu inicial:  ");
 			scanf("%d", &subm2);
@@ -281,7 +224,7 @@ int main() {
 			}
 		break;
 			
-		case 5:
+		case 4:
 			return 0;
 			break;
 	
