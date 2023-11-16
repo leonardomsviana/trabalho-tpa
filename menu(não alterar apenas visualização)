@@ -17,7 +17,7 @@ int main() {
 	printf("                                    *********************************************************************\n");
 	printf("                                    *                                                                   *\n");
 	printf("                                    *                                                                   *\n");
-	printf("                                    *     1. Inserir perguntas e respostas (palavras chaves)            *\n");
+	printf("                                    *     1. Inserir perguntas e respostas                             *\n");
 	printf("                                    *     2. Resolva localmente                                         *\n");
 	printf("                                    *     3. Insira arquivos de resposta (redação) em .txt              *\n");
 	printf("                                    *     4. Sair                                                       *\n");
